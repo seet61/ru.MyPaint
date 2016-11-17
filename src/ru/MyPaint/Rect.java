@@ -3,5 +3,20 @@ package ru.MyPaint;
 /**
  * Created by dmitry.arefyev on 17.11.2016.
  */
-public class Rect {
+public class Rect extends Shape{
+    private int a, b;
+
+    public Rect(int a, int b, int x0, int y0) {
+        super(x0,y0);
+        this.a = a;
+        this.b = b;
+    }
+
+    public double area() {
+        return (double)a*b;
+    }
+
+    public void print() {
+        System.out.println("Rectangle: a=" + this.a + ", b=" + this.b + ", x0=" + this.getX0() + ", y0=" + this.getY0());
+    }
 }

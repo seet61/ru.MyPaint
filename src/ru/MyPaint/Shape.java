@@ -14,7 +14,7 @@ public class Shape {
         return y0;
     }
 
-    private Shape(int x0, int y0) {
+    public Shape(int x0, int y0) {
         this.x0 = x0;
         this.y0 = y0;
     }
