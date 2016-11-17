@@ -5,6 +5,6 @@ package ru.MyPaint;
  */
 public class MyPaint {
     public static void main(String[] args) {
-        
+
     }
 }
