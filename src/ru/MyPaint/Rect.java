@@ -17,6 +17,6 @@ public class Rect extends Shape{
     }
 
     public void print() {
-        System.out.println("Rectangle: a=" + this.a + ", b=" + this.b + ", x0=" + this.getX0() + ", y0=" + this.getY0());
+        System.out.println("Rectangle: a=" + a + ", b=" + b + ", x0=" + getX0() + ", y0=" + getY0());
     }
 }
