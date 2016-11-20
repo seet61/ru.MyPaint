@@ -12,5 +12,21 @@ public class MyPaint {
         Circle c = new Circle(2, 2, 5);
         System.out.println(c.area());
         c.print();
+
+        Shape mas[] = new Shape[]{r, c, new Rect(1, 9, 2, 7)};
+        paintAll(mas);
+    }
+
+    private static void paintAll(Shape[] mas) {
+        for (Shape h : mas) {
+            if (h instanceof Rect) {
+                Rect r = (Rect) h;
+                r.print();
+            }
+            else if (h instanceof Circle) {
+                Circle c = (Circle) h;
+                c.print();
+            }
+        }
     }
 }
