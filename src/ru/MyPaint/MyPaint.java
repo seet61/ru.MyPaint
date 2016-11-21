@@ -18,7 +18,8 @@ public class MyPaint {
     }
 
     private static void paintAll(Shape[] mas) {
-        for (Shape h : mas) {
+        /*for (Shape h : mas) {
+            System.out.println();
             if (h instanceof Rect) {
                 Rect r = (Rect) h;
                 r.print();
@@ -27,6 +28,8 @@ public class MyPaint {
                 Circle c = (Circle) h;
                 c.print();
             }
-        }
+        }*/
+        //Полиморфный метод, которые вызывает метод из класса, если он не определен, то из суперкласса
+        for (Shape h: mas) h.print();
     }
 }

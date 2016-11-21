@@ -12,10 +12,12 @@ public class Rect extends Shape{
         this.b = b;
     }
 
+    @Override
     public double area() {
         return (double)a*b;
     }
 
+    @Override
     public void print() {
         System.out.println("Rectangle: a=" + a + ", b=" + b + ", x0=" + getX0() + ", y0=" + getY0());
     }

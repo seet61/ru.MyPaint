@@ -3,8 +3,8 @@ package ru.MyPaint;
 /**
  * Created by dmitry.arefyev on 17.11.2016.
  */
-public class Shape {
-    //private int x0, y0;
+abstract public class Shape {
+    private int x0, y0;
     private int []c = new int[2];
 
     public int getX0() {
@@ -15,12 +15,12 @@ public class Shape {
         return c[1];
     }
 
-    public void setX0(int x) {
+    final public void setX0(int x) {
         this.c[0] = x;
     }
 
-    public void setY0(int y) {
-        this.c[2] = y;
+    final public void setY0(int y) {
+        this.c[1] = y;
     }
 
     public Shape(int x0, int y0) {
@@ -36,4 +36,10 @@ public class Shape {
         setX0(getX0() + dx);
         setY0(getY0() + dy);
     }
+
+    public void print() {}
+
+    //Абстрактный метод не имеет реализации
+    abstract public double area();
+
 }
